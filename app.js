@@ -1,49 +1,37 @@
-/*let nombre = prompt("cual es tu nombre?");
-let edad = prompt("cual es tu edad?");
+// Numeros
 
-document.getElementById('app').innerHTML=`Bienvenido ${nombre} de ${edad} años`;
+const numero1 = 30;
+const numero2 = 20;
+const numero3 = 20.20;
+const numero4 = .1020;
+const numero5 = -3;
 
-console.log(2+2);
+let resultado;
 
-var nombre = 'juan';
-var nombre = 'jhon'
+resultado = numero1+numero2;
+resultado = numero1-numero2;
+resultado = numero1*numero2;
+resultado = numero1/numero2;
+resultado = numero1*2;
+resultado = numero1%numero2;
+resultado = Math.PI;
+resultado = Math.round(2.4);
+resultado = Math.floor(2.4);
+resultado = Math.sqrt(144);
+resultado = Math.abs(numero5);
+resultado = Math.pow(8,3);
+resultado = Math.min(6,7,3,8,4);
+resultado = Math.max(6,7,3,8,4);
+resultado = Math.random();
+resultado = 10+20-5*2;
 
-console.log(nombre);
-
-var let const
-
-
-*/
-
-let nombre,mensaje;
-
-mensaje = "Y entonces dije \'buen curso\' estoy";
-
-//console.log(mensaje);
-
-mensaje = 'aprendiendo javaScript, CSS, HTML para ser Frontend'
-
-let aprendiendo = 'aprrendiendo',
-     tecnologia = 'javasrcript' +' ';
-
-
-     //concatenar js
-     /*console.log(aprendiendo+' '+tecnologia);
-     console.log(`${aprendiendo}${tecnologia}`);
-
-     console.log(tecnologia.length);
-
-     console.log(tecnologia.concat(' ', 'es genial'));
-
-     console.log(tecnologia.toUpperCase);
-
-     console.log(mensaje.indexOf('PHP'));
-
-     console.log(mensaje.slice(-3));*/
-
-     console.log(mensaje.replace('CSS','PHP'));
-
-     console.log(mensaje.includes('CSS','PHP'));
+let puntaje = 10;
 
 
-     console.log(tecnologia.repeat(10));
+
+puntaje ++;
+
+console.log('tu puntaje es ' + puntaje);
+
+
+console.log(resultado);
