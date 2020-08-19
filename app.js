@@ -1,30 +1,28 @@
-const numero1 = '50';
-const numero2 = 10;
-const numero3 = 'tres';
+let cp;
+cp = 42119;
+cp = String(cp);
 
-
+//console.log(cp.length);
 
 let dato;
-dato = Number("20");
-dato = Number("20.22214");
-dato = Number(true);
-dato = Number(false);
-dato = Number(null);
-dato = Number(undefined);
-dato = Number('hola mundo');
-dato = Number([1,2,3,4]);
+dato = '4'+'4;'
+dato = true;
 
-dato = parseInt('100');
-dato = parseFloat('100');
-dato = parseInt('100.2453');
+// De arreglo a string
 
-dato = '113434.31412';
+dato =  String([1,2,3])
 
-//console.log(dato.toFixed(3)); to fix acortar decimales
-console.log(parseFloat(dato).toFixed(2));
+//to String
+dato = 20;
+dato = true;
+dato = [1,2,3,4];
+//dato = null;
+//dato = undefined;
+dato = dato.toString();
 
 console.log(dato);
-
+console.log(dato.length);
+console.log(typeof dato);
 
 
 
