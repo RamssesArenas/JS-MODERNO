@@ -6,7 +6,10 @@
 
 saludar('alma');
 saludar('miguel');
-saludar('rogelio'); */
+saludar('rogelio'); 
+
+
+*/
 
 function sumar(a,b){
      console.log(a+b);
@@ -24,3 +27,4 @@ function saludar(nombre = 'Vistante'){
 let saludo;
  saludo = saludar();
   console.log(saludo);
+
