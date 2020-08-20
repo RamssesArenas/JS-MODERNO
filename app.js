@@ -1,15 +1,25 @@
-// Function Expression
+// iife
+(function(tecnologia){
+     console.log(`aprendiendo ${tecnologia}`)
+})('javascript');
 
-const suma = function(a,b){
-     return a+b;
+//Metodos de propiedad
+// Cuando una funcion se pone dentro de un objeto
+
+const musica ={
+     reproducir:function(id){
+          console.log(`Reproduciendo Cancion id ${id}`);},
+     pausar:function(){
+               console.log('Pausar musica');
+     }
 }
 
-console.log(suma(1,2));
-console.log(suma(4,2));
 
-const saludar = function(nombre = 'visitante', edad=20, trabajo='desarrollador web'){
-     return `hola ${nombre}, profesion ${trabajo} y tienes ${edad} años`;
+// Los metodos pueden creearse o guardarse / crearse fuera del objeto
+musica.borrar = function(id){
+     console.log(`Borrando Cancion con el id ${id}`);
 }
 
-console.log(saludar('ram'));
-console.log(saludar());
+musica.reproducir(30);
+musica.pausar();
+musica.borrar(2);
