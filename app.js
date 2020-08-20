@@ -1,17 +1,27 @@
-try {
-     algo();
-} catch (error) {
-     console.log('error');
-}finally{
-     console.log('No le importa, ejecuta de todos modos')
-}
+const diaHoy = new Date();
+let navidad2017 = new Date(1995,11,20); //meses se inicializa en 0
+let valor;
+//Mes
+valor=diaHoy.getMonth();
+//dia
+valor=diaHoy.getDate();
+valor=diaHoy.getDay();
+//obtener año
+valor=diaHoy.getFullYear();
+//Minutos
+valor = diaHoy.getUTCMinutes();
+//Hora
+valor = diaHoy.getHours();
+//Milesegundos desde 1970
+valor = diaHoy.getTime();
 
-function obtenerClientes(){
-     console.log('descargando...');
+valor=diaHoy.getFullYear();
+valor=diaHoy.setFullYear(2016);
+valor = diaHoy.getFullYear();
 
-     setTimeout(function(){
-          console.log('completado')
-     },3000);
-     }
 
-obtenerClientes();
+console.log(valor);
+console.log(navidad2017)
+
+
+
