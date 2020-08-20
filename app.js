@@ -1,25 +1,17 @@
-// iife
-(function(tecnologia){
-     console.log(`aprendiendo ${tecnologia}`)
-})('javascript');
+try {
+     algo();
+} catch (error) {
+     console.log('error');
+}finally{
+     console.log('No le importa, ejecuta de todos modos')
+}
 
-//Metodos de propiedad
-// Cuando una funcion se pone dentro de un objeto
+function obtenerClientes(){
+     console.log('descargando...');
 
-const musica ={
-     reproducir:function(id){
-          console.log(`Reproduciendo Cancion id ${id}`);},
-     pausar:function(){
-               console.log('Pausar musica');
+     setTimeout(function(){
+          console.log('completado')
+     },3000);
      }
-}
 
-
-// Los metodos pueden creearse o guardarse / crearse fuera del objeto
-musica.borrar = function(id){
-     console.log(`Borrando Cancion con el id ${id}`);
-}
-
-musica.reproducir(30);
-musica.pausar();
-musica.borrar(2);
+obtenerClientes();
