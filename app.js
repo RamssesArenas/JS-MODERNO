@@ -1,67 +1,46 @@
-// Estructuras de control
+// switch
+/* const metodoPago='efectivo';
 
-/* const edad = 17;
+switch (metodoPago) {
+     case 'efectivo':console.log(`El usuario pago con ${metodoPago}`)
+          break;
+     case 'cheque':console.log(`El usuario pago con ${metodoPago}`)
+          break;
+     case 'tarjeta':console.log(`El usuario pago con ${metodoPago}`)
+          break;
+     default:
+          console.log('metodo de pago no soportado');
+} */
 
-if(edad >= 18){
-     console.log('SI puedes ingresar al  stio')
-}else{
-     console.log('No puedes ingresar al  stio')
-} 
-
-
-let puntaje = 30;
-
-if(puntaje){
-     console.log(`el puntaje fue de ${puntaje}`);
-}else{
-     console.log('No hay puntaje');
+let mes;
+switch (new Date().getMonth()) {
+     case 0:mes = 'Enero';
+          break;
+     case 1:mes = 'Febrero';
+          break;
+     case 2:mes = 'Marzo';
+          break;
+     case 3:mes = 'Abril ';
+          break;
+     case 4:mes = 'Mayo';
+          break;
+     case 5:mes = 'Junio';
+          break;
+     case 6:mes = 'Julio';
+          break;
+     case 7:mes = 'Agosto';
+          break;
+     case 8:mes = 'Septiembre';
+          break;
+     case 9:mes = 'Octubre';
+          break;
+     case 10:mes = 'Noviembre';
+          break;
+     case 11:mes = 'Diciembre';
+          break;
+     default:
+          console.log('Este mes no existe');
 }
 
-let efectivo = 500;
-let totalCarrito = 1000;
-if (efectivo > totalCarrito) {
-     console.log('pago Correcto')
-} else {
-     console.log('sin fondos suficientes')
-}
+console.log(`Este mes es ${mes}`);
 
-
-let hora=25;
-if(hora>0 && hora<=10){
-     console.log('buenos dias')
-}else if(hora>10 && hora<=18){
-     console.log('Buenas Tardes')
-}else if(hora>18 && hora<=24){
-     console.log('Buenas Noches')
-}
-
-else{
-     console.log('Hora no valida')
-}
-*/
-
-
-// operado OR ||
-
-let efectivo = 300,
-     credito = 300,
-     totalCarrito= 500;
-     disponible = credito+efectivo;
-
-if (totalCarrito < credito || totalCarrito < credito || totalCarrito<disponible) {
-     console.log('puede pagar');
-}/*else if (totalCarrito<disponible) {
-     console.log('Usar credito parapagar');
-} 
-
- else if (totalCarrito< credito) {
-     console.log('puede pagar');
-} */else{
-     console.log('no puede pagar')
-}
-
-
-//ternario if en una sola linea
-
-const logueado = true;
-console.log(logueado === true ? 'si se logueo' : ' no se ha logueado')
