@@ -1,27 +1,67 @@
-const diaHoy = new Date();
-let navidad2017 = new Date(1995,11,20); //meses se inicializa en 0
-let valor;
-//Mes
-valor=diaHoy.getMonth();
-//dia
-valor=diaHoy.getDate();
-valor=diaHoy.getDay();
-//obtener año
-valor=diaHoy.getFullYear();
-//Minutos
-valor = diaHoy.getUTCMinutes();
-//Hora
-valor = diaHoy.getHours();
-//Milesegundos desde 1970
-valor = diaHoy.getTime();
+// Estructuras de control
 
-valor=diaHoy.getFullYear();
-valor=diaHoy.setFullYear(2016);
-valor = diaHoy.getFullYear();
+/* const edad = 17;
+
+if(edad >= 18){
+     console.log('SI puedes ingresar al  stio')
+}else{
+     console.log('No puedes ingresar al  stio')
+} 
 
 
-console.log(valor);
-console.log(navidad2017)
+let puntaje = 30;
+
+if(puntaje){
+     console.log(`el puntaje fue de ${puntaje}`);
+}else{
+     console.log('No hay puntaje');
+}
+
+let efectivo = 500;
+let totalCarrito = 1000;
+if (efectivo > totalCarrito) {
+     console.log('pago Correcto')
+} else {
+     console.log('sin fondos suficientes')
+}
 
 
+let hora=25;
+if(hora>0 && hora<=10){
+     console.log('buenos dias')
+}else if(hora>10 && hora<=18){
+     console.log('Buenas Tardes')
+}else if(hora>18 && hora<=24){
+     console.log('Buenas Noches')
+}
 
+else{
+     console.log('Hora no valida')
+}
+*/
+
+
+// operado OR ||
+
+let efectivo = 300,
+     credito = 300,
+     totalCarrito= 500;
+     disponible = credito+efectivo;
+
+if (totalCarrito < credito || totalCarrito < credito || totalCarrito<disponible) {
+     console.log('puede pagar');
+}/*else if (totalCarrito<disponible) {
+     console.log('Usar credito parapagar');
+} 
+
+ else if (totalCarrito< credito) {
+     console.log('puede pagar');
+} */else{
+     console.log('no puede pagar')
+}
+
+
+//ternario if en una sola linea
+
+const logueado = true;
+console.log(logueado === true ? 'si se logueo' : ' no se ha logueado')
