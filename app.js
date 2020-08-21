@@ -1,21 +1,31 @@
-// for loops
-/* for (let i = 0; i < 10; i++) {
-     console.log(`Numero: ${i+1}`);
-     
-} 
+//While
 
- for (let i = 0; i < 10; i++) {
-     if (i === 5) {
-          console.log('voy en el 5');
-          break;// Continue seguir y brack detener el for
+/* let i=0;
+
+while (i<10) {
+     if(i === 5){
+     console.log('Cinco');
+     i++;//Evitar imprimir console.log(`Numero: ${i}`); 5
+     //continue;
+     break;         // detener el ciclo
      }
-     console.log(`${i+1}`);
+     console.log(`Numero: ${i}`);
+     i++;
 } */
 
-const arreglosProductos = ['camisa','boleto','guitarra','disco'];
+// While no corre a menos que la condicion se cumpla
+/* const musica = ['Cancion 1','Cancion 2','Cancion 3'];
 
+let i=0;
 
-
-for (let i = 0; i < arreglosProductos.length; i++) {
-          console.log(`tu producto ${arreglosProductos[i]} fue agregado`);
+while (i<musica.length) {
+     console.log(`Reproduciendo cancion: ${musica[i]}`);
+     i++;
 }
+ */
+
+ let i = 1000;
+ do {
+     console.log(`Numero ${i}`);
+     i++;
+ } while (i<10);
