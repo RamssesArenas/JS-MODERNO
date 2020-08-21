@@ -1,31 +1,42 @@
-//While
+// Recorrer un arreglo con For each
 
-/* let i=0;
+/* const pendientes = ['Tarea','Comer','Proyecto','Aprender JS']
 
-while (i<10) {
-     if(i === 5){
-     console.log('Cinco');
-     i++;//Evitar imprimir console.log(`Numero: ${i}`); 5
-     //continue;
-     break;         // detener el ciclo
-     }
-     console.log(`Numero: ${i}`);
-     i++;
-} */
-
-// While no corre a menos que la condicion se cumpla
-/* const musica = ['Cancion 1','Cancion 2','Cancion 3'];
-
-let i=0;
-
-while (i<musica.length) {
-     console.log(`Reproduciendo cancion: ${musica[i]}`);
-     i++;
+for (let i = 0; i < pendientes.length; i++) {
+     console.log(pendientes[i]);
+     
 }
- */
+//console.log(pendientes);
 
- let i = 1000;
- do {
-     console.log(`Numero ${i}`);
-     i++;
- } while (i<10);
+//ForEach
+pendientes.forEach(function(pendiente,index){
+     console.log(`${index+1} : ${pendiente}`)
+}) */
+
+//Map para recorrer un arreglo de objetos
+
+/* const carrito=[
+     {id:1, producto:'libro'},
+     {id:1, producto:'Camisa'},
+     {id:1, producto:'guitarra'},
+     {id:1, producto:'disco'}
+];
+
+const nombreProducto = carrito.map(function(carrito){
+     return carrito.producto;
+});
+
+console.log(nombreProducto); */
+
+const automovil = {
+     modelo: 'camaro',
+     motor: 61,
+     anio: 1969,
+     marca: 'chevrolet'
+}
+
+for(let auto in automovil){
+     console.log(`${auto} : ${automovil[auto]}`)
+}
+
+console.log(automovil);
