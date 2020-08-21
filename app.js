@@ -1,42 +1,62 @@
-// Recorrer un arreglo con For each
+ const ciudades = ['londres','new york','madrid','paris']
+ const ordenes = new Set ([123,231,131,102]);
+ const datos = new Map();
+ datos.set('nombre','juan');
+ datos.set('profesion','desarrollador web');
 
-/* const pendientes = ['Tarea','Comer','Proyecto','Aprender JS']
+// Values al iterador
 
-for (let i = 0; i < pendientes.length; i++) {
-     console.log(pendientes[i]);
-     
-}
-//console.log(pendientes);
+//Entries a las ciudades
+/* for (let entrada of ciudades.entries()){
+     console.log(entrada);
+} */
+//keys
+/* for (let entrada of ciudades.keys()){
+     console.log(entrada);
+} */
 
-//ForEach
-pendientes.forEach(function(pendiente,index){
-     console.log(`${index+1} : ${pendiente}`)
-}) */
-
-//Map para recorrer un arreglo de objetos
-
-/* const carrito=[
-     {id:1, producto:'libro'},
-     {id:1, producto:'Camisa'},
-     {id:1, producto:'guitarra'},
-     {id:1, producto:'disco'}
-];
-
-const nombreProducto = carrito.map(function(carrito){
-     return carrito.producto;
-});
-
-console.log(nombreProducto); */
-
-const automovil = {
-     modelo: 'camaro',
-     motor: 61,
-     anio: 1969,
-     marca: 'chevrolet'
+//default
+for (let entrada of ciudades){
+     console.log(entrada);
 }
 
-for(let auto in automovil){
-     console.log(`${auto} : ${automovil[auto]}`)
+//Values a las ciudades
+/* for (let entrada of ciudades){
+     console.log(entrada);
+} */
+//Entries Ordenes
+/* for (let entradas of ordenes.entries()){
+     console.log(entradas);
+} */
+
+
+for (let entradas of ordenes.keys()){
+     console.log(entradas);
 }
 
-console.log(automovil);
+//Entries para el MAP
+for(let entrada of datos.entries()){
+     console.log(entrada);
+}
+
+//Values solo entrega el valor
+//Entries entrega posicion y valor
+//Keys entrega las llaves
+for(let entrada of datos.values()){
+     console.log(entrada);
+}
+
+
+const mensaje =  'Aprendiendo JS';
+/* for (let i=0; i<mensaje.length;i++){
+     console.log(mensaje[i]);
+} */
+
+/* for ( let letra of mensaje){
+     console.log(letra);
+} */
+
+const enlaces = document.getElementsByTagName('a');
+for(let enlace of enlaces){
+     console.log(enlace.href);
+}
